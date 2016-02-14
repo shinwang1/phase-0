@@ -35,3 +35,13 @@ rm - remove an item
 help - "man" in OSX, provides a guide to shell com
 
 ### H3 1.4 Forking and Cloning
+
+For creating a new repo on Github.com, log into your account and clike the "+" symbol on the top right corner of the page and select "New repository".
+
+To fork a repo, first find the repo by search for its name in the search bar. Once you find the repo in the list, click on the name of the repo, then "fork" button will be on the top right of the page under the menu bar.
+
+To clone a repo, make sure that you are in the directory of your choice in Terminal. Type: git clone <github url>. The url can be copied from within your repo after the SSH field.
+
+Forking the repo is like taking an instance of the body of work at a certain time. If I were to make changes or contributions to the repo, my changes can be tracked within my own repo without affecting the original repo. Since everything is version controlled as I am using git, then I can always go back to an instance of the repo or even back to the original repo to see the difference.
+
+The thing that I'm currently unsure of is whether my user name and email are automatically setup whenever I decide to start a project folder with the "git init" command. I checked and it appears that I would have to set my username and email with every folder that I initiate git. I also noticed that after I initiate git, my terminal prompt displays: [\[\e[0;32m\]master\[e[0m\]] I suspect that this has something to do with the way my bashprofile or bashrc.

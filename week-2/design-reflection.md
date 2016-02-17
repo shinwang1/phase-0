@@ -1,6 +1,6 @@
 # Design Reflections
 
-![Display Site Map](/imgs/site-map.png "Inline image display")
+![Display Site Map](/imgs/site-map.png)
 
 # What are the 6 Phases of Web Design?
 

@@ -21,9 +21,6 @@ a:visited {
     color: #ff0000;
 }
 
-body {
-
-}
 
 h2 {
 	font-weight: bold;
@@ -66,3 +63,49 @@ h6 {
 footer {
 	border-top: 1px solid black;
 }
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It's important to select the correct relative path of the CSS file. If the path is not correct,
+then nothing the HTML file will stay with default styling.
+
+What tricks did you use to help you with positioning?
+
+For this challenge, we used padding along with width and height for positioning. 
+owever, it's noted that we should've done a reponsive site considering the viewing
+resolution for people on different screen sizes can vary.
+
+How hard was it to get the site as you wanted it?
+
+It was actually pretty tricky to get the site the way we wanted it. After comparing with
+the actual site, we realized that the links were laid out in a table instead of a list.
+From the previous week, we had thought that the links were in a list. In our CSS, we split
+the list of links into two columns. However, without a table, it was difficult to get the
+spacing right for each link.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+We modified size, color and other attributes of different semantic elements as well as
+class and id tags. For example text size can be adjusted with both px and em while color
+can use Hex or the actual color name. For certain elements, such as enlarging the first
+letter of a word to be a different size, we had to adjust the HTML with a special tagging
+then change it with CSS.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why?
+
+Yes we did. We chose to use class when modifying a section of elements and id's to point to
+smaller elements.
+
+If you didn't, how would you know which one to add to your HTML?
+class are called out with the dot notation such as .class
+id's are called out with the hash notation such as #id
+
+When you compared your site to the actual code base,
+which do you think had cleaner code that followed best practices and why?
+
+I think our way was a bit cleaner since the Berkshire site still looks like it
+was formatted in HTML4 style. I think HTML5 allows the composer certain shortcuts
+so that he/she doesn't have to repeatedly style every little piece.
+
+*/

@@ -8,7 +8,7 @@
 ![Row](imgs/row.jpg)
 
 # 4. Make Equidistant
-![Make Equidistant](imgs/equal_distant.png)
+![Make Equidistant](imgs/equal_distance.png)
 
 # 5. Squares
 ![square](imgs/square.png)
@@ -20,7 +20,7 @@
 ![Header](imgs/header.png)
 
 # 8. Side Bar
-![SideBar](imgs/sidebarpng)
+![SideBar](imgs/sidebar.png)
 
 # 9. Get Creative
 ![Creative](imgs/get_creative.jpg)

@@ -1,5 +1,5 @@
 # 1. Change the Colors
-![Color Change](/imgs/change_the_colors.jpg)
+![Color Change](imgs/change_the_colors.jpg)
 
 # 2. Column
 ![Column](/imgs/column.jpg)

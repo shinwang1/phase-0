@@ -1,3 +1,27 @@
-h1{
-	color: blue;
+body{
+  font-family: arial;
+}
+
+.column-wrapper {
+  display: table;
+}
+
+section {
+  display: table-cell;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+.column-1{
+  background-color: #ffffe6;
+}
+
+.column-2{
+  background-color: #f2e6ff;
+}
+
+
+footer{
+  margin-top: 10px;
 }

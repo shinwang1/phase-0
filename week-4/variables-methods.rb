@@ -13,6 +13,10 @@ favNum = gets.chomp
 newNum = favNum.to_i + 1
 puts "Your #{favNum} is okay, but #{newNum} is better a number."
 
+
+###### Release 2
+# https://github.com/shinwang1/phase-0/blob/master/week-4/define-method/my_solution.rb
+
 ###### Return a Formatted Address
 # https://github.com/shinwang1/phase-0/blob/master/week-4/address/my_solution.rb
 

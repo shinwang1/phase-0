@@ -16,7 +16,7 @@ The difference between integers and floats is precision. If you were to perform 
 
 #Release 2
 Hours in a year:
-...
+...ruby
 def how_many_hours (year)
 	hours = year * 365 * 24
 	p hours
@@ -27,12 +27,12 @@ how_many_hours (2)
 ...
 
 Minutes in a decade:
-...
+...ruby
 def how_many_min (decade)
 	min = decade * 365 * 24 * 60
 	p min
 end
 
-how_many_min 1
-how_many_min 2
+how_many_min (1)
+how_many_min (2)
 ...

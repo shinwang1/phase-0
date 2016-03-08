@@ -85,3 +85,35 @@ add_item(new_groc_list, "Ice Cream", 4)
 remove_item(new_groc_list, "Lemonade")
 update_item_qty(new_groc_list, "Ice Cream", 1)
 print_groc_list (new_groc_list)
+
+################### Reflection #############
+# What did you learn about pseudocode from working on this challenge?
+# Pseudocode allows me to break down the problem into plain english. We used
+# it to produce methods in a logical order
+
+#What are the tradeoffs of using Arrays and Hashes for this challenge?
+# For this challenge it would be more difficult to update and remove an item
+# because you would have to iterate through the array to find the exactly string
+# that matches your key.
+
+# What does a method return?
+# A method returns the last object it processes. If the method doesn't contain
+# any logic, then it doesn't return anything.
+
+# What kind of things can you pass into methods as arguments?
+# You can pass any objects into a method as arguments. This includes strings,
+# integers/floats, arrays, hash, symbols, etc.
+
+# How can you pass information between methods?
+# You can pass a method into a variable outside of any method. In this challenge
+# we passed creat_list method into the new_groc_list variable. Thus the new
+# hash created by the creat_list method can be passed into other methods.
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+# I learned about creating, deleting, and updating hashes. I iterated over the
+# hash. The thing that's confusing is that I got an error for the methods for updating,
+# creating, and removing when I used a space between calling the method and its argument.
+# For example in lines 81 to 86, if I leave a space between list this add_item (xxxx),
+# I would get a syntax error for unexpected comma in my arguments. I'm guessing it's because
+# I'm passing more than one thing alone with the hash as arugments because in line 87, my print
+# method works just find passing in a hash with a space between the method name and argument.

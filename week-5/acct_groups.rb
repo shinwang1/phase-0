@@ -73,6 +73,32 @@ def group_divider (array_of_names)
       group_hash[x] = 1
     end
     p group_hash
+  elsif array_of_names.length % 5 == 0 || array_of_names.length % 5 == 3 || array_of_names.length % 5 == 4
+    group_hash = Hash.new
+   
+    counter = 0
+    group_num_assigned = 1
+    while counter < array_of_names.length
+      group_hash[array_of_names[counter]] = group_num_assigned
+      counter += 1
+      if counter % 5 == 0
+        group_num_assigned += 1
+      end
+    end
+    p group_hash
+  elsif array_of_names.length % 3 == 0  
+    group_hash = Hash.new
+   
+    counter = 0
+    group_num_assigned = 1
+    while counter < array_of_names.length
+      group_hash[array_of_names[counter]] = group_num_assigned
+      counter += 1
+      if counter % 3 == 0
+        group_num_assigned += 1
+      end
+    end
+    p group_hash
   else
     group_hash = Hash.new
    
@@ -80,8 +106,7 @@ def group_divider (array_of_names)
     group_num_assigned = 1
     while counter < array_of_names.length
     	group_hash[array_of_names[counter]] = group_num_assigned
-   
-    	counter += 1
+      counter += 1
     	if counter % 4 == 0
     		group_num_assigned += 1
     	end
@@ -106,5 +131,7 @@ group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena"])
 group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu"])
 # group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka"])
 group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell"]) #9 ppl
-# group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell", "Joey Sabani"]) #10 ppl
-# group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell", "Joey Sabani", "John Dees"]) #11 ppl
+group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell", "Joey Sabani"]) #10 ppl
+group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell", "Joey Sabani", "John Dees"]) #11 ppl
+group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell", "Joey Sabani", "John Dees", "Katy Duncan", "Laura Crowe", ]) #13 ppl
+group_divider (["Adell Hanson-Kahn", "Aji Slater", "Alex DeLaPena", "Bison Hubert", "Caitlyn Yu", "Gary Sperka", "Helin Shiah", "James Hwang", "Jen Trudell", "Joey Sabani", "John Dees", "Katy Duncan", "Laura Crowe", "Lorena Mesa"]) #14 ppl

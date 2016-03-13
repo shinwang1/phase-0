@@ -8,13 +8,15 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 # Person 1's solution: Shin Wang
 
 def my_array_finding_method(source, thing_to_find)
-  final_array = []
-  source.each do |word|
-    if word.class == thing_to_find.class && word.include?(thing_to_find) == true
-      final_array << word
-    end
-  end
-  return final_array
+  # final_array = []
+  # source.each do |word|
+  #   if word.class == thing_to_find.class && word.include?(thing_to_find) == true
+  #     final_array << word
+  #   end
+  # end
+  # return final_array
+  ###### refactor
+  return source.grep(/#{ thing_to_find }/)
 end
 
 def my_hash_finding_method(source, thing_to_find)
@@ -34,12 +36,20 @@ end
 # .include? is able to look within a string to find elememts of the string that are matching.
 
 # Person 2
-def my_array_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_array_modification_method!(input_array, add_num)
+  input_array.each_with_index do |item, index|
+    if item.is_a?(Numeric)
+      input_array[index] += add_num
+    end
+  end
+return input_array
 end
 
-def my_hash_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_hash_modification_method!(input_hash, add_years)
+  input_hash.each do |k,v|
+      input_hash[k] += add_years
+    end
+return input_hash
 end
 
 # Identify and describe the Ruby method(s) you implemented.
@@ -50,11 +60,11 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.sort_by {|x| x.to_s}
 end
 
 def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.sort_by {|name,age| age}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
@@ -80,11 +90,46 @@ end
 
 # Person 5
 def my_array_splitting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+
+  split_array = []
+  array_1 = []
+  array_2 = []
+
+  source.each do | item |
+    if item.is_a?(Integer)
+      array_1.push(item)
+    else
+      array_2.push(item)
+    end
+  end
+
+  split_array.push(array_1)
+  split_array.push(array_2)
+
+  return split_array
+
 end
 
 def my_hash_splitting_method(source, age)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+
+  split_array = []
+  array_1 = []
+  array_2 = []
+
+  source.keys.each do | the_key |
+    new_item = [the_key, source[the_key]]
+    if source[the_key] <= 4
+      array_1.push(new_item)
+    else
+      array_2.push(new_item)
+     end
+  end
+
+  split_array.push(array_1)
+  split_array.push(array_2)
+
+  return split_array
+
 end
 
 # Identify and describe the Ruby method(s) you implemented.

@@ -75,11 +75,17 @@ end
 
 # Person 4
 def my_array_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+  source.each do |substring|
+    if substring.class == thing_to_delete.class && substring.include?(thing_to_delete) == true
+      source.delete(substring)
+    end
+  end
+  return source
+  end
 
 def my_hash_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  updated_hash = source.reject! {|k,v| k == thing_to_delete}
+  return updated_hash
 end
 
 # Identify and describe the Ruby method(s) you implemented.

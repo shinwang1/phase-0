@@ -2,7 +2,7 @@
 
 # I worked on this challenge [by myself]
 
-# I spent [#] hours on this challenge.
+# I spent [2] hours on this challenge.
 
 # Pseudocode
 
@@ -66,4 +66,29 @@ Yes this code is simpler.
 
 ############### Release 4
 
+Refactoring can be found in the link below:
+https://github.com/shinwang1/phase-0/blob/master/week-6/attr/release_5.rb
+
+############### Release 6
+What is a reader method?
+The attribute reader method allow other Class to have read access to variables
+contained in a different class.
+
+What is a writer method?
+The attribute writer method allow other Class to have write access to variables
+contained in a different class.
+
+What do the attr methods do for you?
+The attr methods give permission to other classes to access and/or write data to
+variables contained in a separate class.
+
+Should you always use an accessor to cover your bases? Why or why not?
+You shouldn't use accessors to cover your bases because you may want to let user
+have read but not write or vice versa access. There are security reasons depending
+on the type of program you write.
+
+What is confusing to you about these methods?
+I think writing them in general is a bit confusing since we were only used to writing
+single methods. I thin it's interesting how variables and methods can be accessed across
+classes. I will have to practice more with case uses to understand better.
 =end

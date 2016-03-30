@@ -385,4 +385,4 @@ Tropical Pa  Hawaii
 
 # Release 6:
 
-![schema](/clueless.png "What to wear, Schema")
+![schema](./clueless.png "What to wear, Schema")

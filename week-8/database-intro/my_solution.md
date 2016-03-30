@@ -382,3 +382,7 @@ Pacific      Oregon
 Pacific      Washington
 North Pacif  Alaska
 Tropical Pa  Hawaii
+
+# Release 6:
+
+![schema](/clueless.png "What to wear, Schema")

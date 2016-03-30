@@ -386,3 +386,17 @@ Tropical Pa  Hawaii
 # Release 6:
 
 ![schema](./clueless.png "What to wear, Schema")
+
+# Release 7:
+What are databases for?
+Databases draw relationships between tables of information.
+
+What is a one-to-many relationship?
+This means that one record from the parent table can have several child records in another table. However, it is not required for the parent to have any child records. Each child must have only one parent record.
+
+What is a primary key? What is a foreign key? How can you determine which is which?
+Primary key is the unique identy for a table. Meaning that each row within the table has an unique key. It also cannot be null.
+A parent table with a primary key can have a foreign key to it's child table. A foreign key provides a link between two tables. You can tell by the naming convention of the two. Primary key will named "id" and a foreign key will be named "id_name" and link to the Primary key of another table.
+
+How can you select information out of a SQL database? What are some general guidelines for that?
+You can select information in several ways. One of the primary ways is the word "SELECT * FROM". This will first allow you to view what kind of date and table format that you're working with. You can also specify the column and type of information to display. A good reference is from [w3schools SQL link](http://www.w3schools.com/sql/).

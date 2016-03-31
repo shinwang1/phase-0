@@ -56,4 +56,14 @@ end
 
 
 # Reflection
+# What concepts did you review or learn in this challenge?
+# I reviewed iterating through a loop for a fibonacci sequence.
+
+# What is still confusing to you about Ruby?
+# I think Ruby is pretty straight forward at this point. I imagine there
+# will be more nuances to Ruby since there will be many ways to write Ruby
+# elegantly. 
+
+# What are you going to study to get more prepared for Phase 1?
+# I will study more algorithms and bruch up on JS.
 # I did not find any emunerate methods for this challenge.

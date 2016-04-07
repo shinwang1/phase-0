@@ -8,7 +8,7 @@
 
 // Release 0:
 
-// Release 1:
+//Release 1:
 var addAClass = document.getElementById("release-0");
 addAClass.className += "done";
 

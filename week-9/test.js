@@ -1,52 +1,67 @@
-// Setup
-var collection = {
-    2548: {
-      album: "Slippery When Wet",
-      artist: "Bon Jovi",
-      tracks: [ 
-        "Let It Rock", 
-        "You Give Love a Bad Name" 
-      ]
+//Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
     },
-    2468: {
-      album: "1999",
-      artist: "Prince",
-      tracks: [ 
-        "1999", 
-        "Little Red Corvette" 
-      ]
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
     },
-    1245: {
-      artist: "Robert Palmer",
-      tracks: [ ]
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
     },
-    5439: {
-      album: "ABBA Gold"
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["Javascript", "Gaming", "Foxes"]
     }
-};
-// Keep a copy of the collection for tests
-var collectionCopy = JSON.parse(JSON.stringify(collection));
+];
 
+
+function lookUpProfile(firstName, prop){
 // Only change code below this line
-function update(id, prop, value) {
-  if (collection[id][prop] !== "" && collection[id] != "tracks"){
-  	collection[id][prop] = value;
+// for (var i = 0; i< contacts.length; i++){
+//   if (contacts[i].firstName == firstName){
+//     if (contacts[i].hasOwnProperty(prop)){
+//       console.log(contacts[i][prop]);
+//     } else if (contacts[i].firstName != firstName){
+//       console.log("No such contact");
+//     } else {
+//       console.log( "No such property");
+//     }
+//   }
+// }
+
+for (var i = 0; i< contacts.length; i++){
+  if (contacts[i].firstName == firstName){
+    if (contacts[i].hasOwnProperty(prop)){
+      console.log(contacts[i][prop]);
+    }
   }
   
-  if (collection[id] == "tracks" && collection[id][prop] !== ""){
-  	collection[id].tracks.push(value);
+  if (contacts[i].firstName !== firstName){
+    console.log("No such contact");
   }
- 
-  if (collection[id] === ""){
-    delete collection[id][prop];
+  
+  if (contacts[i].hasOwnProperty(prop) === false){
+    console.log( "No such property");
   }
-  console.log(collection);
-  return collection;
 }
+// Only change code above this line
 
-// Alter values below to test your code
-//update(5439, "artist", "ABBA");
-//update(2548, "artist", "");
-update(1245, "tracks", "Addicted to Love");
-//update(1245, "tracks", "SsSSS");
-//update(2548, "tracks", "")
+
+}
+// Change these values to test your function
+lookUpProfile("Harry", "lastName");
+//lookUpProfile("Harry", "likes");
+//lookUpProfile("Sherlock", "likes");
+
